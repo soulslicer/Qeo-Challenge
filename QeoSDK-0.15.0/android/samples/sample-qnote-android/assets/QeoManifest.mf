@@ -1,0 +1,11 @@
+[meta]
+# application name
+appname = qnote
+# manifest file format version
+version = 1
+
+[application]
+org::qeo::sample::note::Note = rw
+org::qeo::sample::note::NoteRequest = rw
+org::qeo::sample::note::Wall = rw
+

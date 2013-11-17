@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/grid_cell_postit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/postit_background"
+    android:orientation="vertical"
+    android:padding="0dp" >
+
+    <TextView
+        android:id="@+id/grid_cell_postit_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="3"
+        android:padding="10dp"
+        android:scrollbarStyle="outsideInset"
+        android:textSize="20sp"
+        android:textIsSelectable="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/grid_cell_postit_edit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@drawable/ic_note_edit"
+            android:contentDescription="@string/edit_note_button" />
+
+        <ImageButton
+            android:id="@+id/grid_cell_postit_move_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@drawable/ic_note_move"
+            android:contentDescription="@string/move_note_button" />
+
+        <ImageButton
+            android:id="@+id/grid_cell_postit_remove_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:src="@drawable/ic_note_delete"
+            android:contentDescription="@string/remove_note_button" />
+    </LinearLayout>
+</LinearLayout>

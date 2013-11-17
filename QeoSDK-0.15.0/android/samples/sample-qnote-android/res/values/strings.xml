@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">QNote</string>
+  <string name="menu_settings">Settings</string>
+  <string name="activity_main_start_service_text">Create wall</string>
+  <string name="write_note_hint">Write note here</string>
+	<string name="create_note_button">Create Note</string>
+	<string name="edit_note_button">Edit Note</string>
+	<string name="remove_note_button">Remove Note</string>
+	<string name="move_note_button">Move Note</string>
+	<string name="add_wall_button">Add Wall</string>
+	<string name="delete_wall_button">Delete Wall</string>
+	<string name="refresh_wall_button">Refresh Wall</string>
+	<string name="wall_name_hint">Wall Name</string>
+	<string name="refresh_walls_toast">Refreshing walls</string>
+	<string name="move_note_toast">Note moved to wall</string>
+	<string name="service_not_found">The Qeo Service was not found. Exiting.</string>
+	<string name="cannot_publish_empty_notes">You cannot publish empty notes!</string>
+	<string name="wall_service_stopping">Stopping wall service!</string>
+	<string name="wall_service_noempty">The wall description cannot be empty</string>
+	<string name="wall_service_starting">Starting wall service !</string>
+	<string name="wall_service_dialog_title">Create Wall</string>
+</resources>

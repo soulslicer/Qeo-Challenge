@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Spinner android:id="@+id/activity_main_wall_spinner"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0" />
+
+        <ImageButton android:id="@+id/add_wall_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:onClick="addWallButtonClicked"
+            android:src="@drawable/ic_wall_add"
+            android:contentDescription="@string/add_wall_button" />
+
+        <ImageButton android:id="@+id/delete_wall_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:onClick="deleteWallButtonClicked"
+            android:src="@drawable/ic_wall_delete"
+            android:contentDescription="@string/delete_wall_button" />
+        
+        <ImageButton android:id="@+id/refresh_wall_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:onClick="refreshWallButtonClicked"
+            android:src="@drawable/ic_wall_refresh"
+            android:contentDescription="@string/refresh_wall_button" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/activity_main_gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:columnWidth="300dp"
+        android:gravity="left"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/activity_main_note_edittext"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:hint="@string/write_note_hint"
+            android:inputType="text" />
+        
+        <ImageButton android:id="@+id/activity_main_create_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="createNoteButtonClicked"
+            android:src="@drawable/ic_note_add"
+            android:contentDescription="@string/create_note_button" />
+    </LinearLayout>
+
+</LinearLayout>
